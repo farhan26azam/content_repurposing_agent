@@ -299,7 +299,7 @@ def main():
 def handler(event, context):
     """Vercel handler function."""
     try:
-        return bootstrap.run(main, {})
+        return bootstrap.run(main,"", {})
     except Exception as e:
         return {
             'statusCode': 500,
